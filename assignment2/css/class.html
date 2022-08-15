@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            background-color:black ;
+            text-align: center;
+            border-radius: 6px;
+            color: white;
+            padding: 5px 0px;
+
+            /* position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+
+
+
+        img{
+            margin: right;
+            -webkit-transform-origin: left;
+        }
+        .text-color{
+            background-color: white;
+            color: black;
+            text-decoration-line: line-through ;
+            text-align: center;
+            text-transform: capitalize;
+            text-shadow: 2px 2px 5px red;
+
+        }
+
+        .small{
+            text-indent: 1px;
+            letter-spacing: 5px;
+            line-height: 10px;
+            word-spacing:;
+            white-space:;
+            
+        }
+         .big{
+            text-indent: 5px;
+            letter-spacing: 50px;
+            line-height: 13.8em;
+            word-spacing: 5px;
+            white-space: 50px;
+            font: italic small-caps bold 12px/30px georgia, serif;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Basic Tooltip</h2>
+    <p>Move the mouse over the text below</p>
+    <div class="tooltip">Hover over me <span class="tooltiptext">Tooltip text</span  >sdfghjolkjhgf</div>
+    <p></p>Note that the postion of the tooltip text isnt very good. go back to the tutorial and continue reading on how to position the tooltip in a desirable way 
+
+
+    <h1>css Images Reflection</h1>
+    <p>show the Reflection to the right of the  image</p>
+    <img src="../images/business4.jpg" alt="">
+        
+
+    <p class="text-color">text color</p>
+
+    <p class="small">
+        This is a paragraph with a smaller line height <br>
+        This is a paragraph with a smaller line height
+    </p>
+    <p class="big" style="font-family:lora;">
+        This is a paragraph with a Bigger line height <br>
+        This is a paragraph with a bigger line height
+    </p>
+</body>
+</html>
